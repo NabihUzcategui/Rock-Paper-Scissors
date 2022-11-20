@@ -22,11 +22,21 @@ body {
 }
 
 .container-choice {
-    padding-top: 20px;
     width: 800px;
+    padding-top: 20px;
     margin: 0 auto;
     text-align: center;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .container-choice {
+        width: auto;
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+    }
 }
 
 .container-buttons {
@@ -34,6 +44,16 @@ body {
     margin: 0 auto;
     text-align: center;
     padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container-buttons {
+        max-width: fit-content;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .button {
@@ -46,6 +66,13 @@ body {
     padding: 10px;
     border-radius: 6px;
     border-color: antiquewhite;
+}
+
+@media (max-width: 768px) {
+    .button {
+        margin-bottom: 20px;
+    }
+
 }
 
 #computer-choice {
@@ -68,12 +95,26 @@ body {
     inline-size: 4px;
     text-transform: uppercase;
 }
-h1{
+
+.title {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
     color: white;
     font-weight: 900;
     text-transform: uppercase;
-    text-align: center;
     font-family: monospace;
     padding-top: 50px;
-    
+}
+
+@media (max-width: 768px) {
+    .title {
+        width: auto;
+        margin: 0px 10px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: monospace;
+        padding-top: 50px;
+    }
 }
